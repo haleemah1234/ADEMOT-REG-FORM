@@ -12,11 +12,11 @@ body{
 
 }
 .container{
-    background-color: blanchedalmond;
+    background-color: white;
     max-width: 500px;
     width: 95%;
     height: 580px;
-    box-shadow: 3px 7px 5px 5px gray;
+    box-shadow: 3px 3px 3px 3px gray;
     border-radius: 7px;
     margin: 20px;
 }
