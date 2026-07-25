@@ -1,13 +1,18 @@
-document.getElementById("regform").addEventListener(
+console.log("javascript loaded")
+const form = document.getElementById("regform");
+console.log("form");
+form.addEventListener(
     "submit", function (e) {
         e.preventDefault();
-        let name = document.getElementById("name").value;
-        let phone = "2347061572871";
-        // let message = "As-salamualeikum warahmatullahi wabarahkatu. \n\nMy name is " + name + ".I am interested in joining your online computer training class.";
+        console.log("Form Submitted");
+        const name = document.getElementById("name").value;
+        console.log(name);
+        const phone = "2347061572871";
+        const message = `As-salamualeikum warahmatullahi wabarahkatu.
+        My name is ${name}.I am interested in joining your online computer training class.`;
         
-        // let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
-        window.open("https://wa.me/" + phone + "text=Hello%2OWorld", 
-            "_blank"
-        );
+        const url = `https://wa.me/ ${phone}?text=${encodeURIComponent(message)}`;
+        console.log(url);
+        location.href = url;
     });
     
